@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f8fa;
+    color: #111;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 2px solid #ddd;
+    z-index: 1000;
+}
+.header-content {
+    max-width: 1100px;
+    margin: auto;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.title {
+    color: #0000ff;
+    font-size: 27px;
+    white-space: nowrap;
+    margin-right: 220px;
+}
+.links {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    flex-wrap: wrap;
+}
+.links a {
+    font-size: 17px;
+    transition: 0.2s;
+}
+.links a:hover {
+    color: #ff0000;
+}
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 140px 20px 80px;
+    scroll-margin-top: 80px;
+}
+.content {
+    width: 100%;
+}
+.medium-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.artists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.artist {
+    text-align: center;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    transition: 0.3s;
+}
+.artist:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.artist img {
+    width: 99%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 12px;
+}
+.artist h3 {
+    font-size: 20px;
+}
+.sing{
+    font-size: 17px;
+}
+.artist button{
+    border-radius: 10px;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+.artist button:hover{
+    background-color: #00F0FF;
+}
+.fav{
+    min-height: 610px;
+    border-top: 1px solid #ddd;
+    margin: 0 auto;
+    padding: 100px 20px 80px;
+    scroll-margin-top: 80px;
+}
+.sub{
+    padding: 1px;
+    font-size: 18px;
+    margin: 15px;
+}.favs span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.favs{
+    width: 330px;
+    height: 300px;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px ;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    vertical-align: top;
+}
+.favs:hover{
+    transform: translateY(-17px);
+}
+.favs img{
+    width: 99%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.favs button{
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+
+    transition:  background-color 0,5s;
+}
+.favs button:hover{
+    background-color: #00F0FF;
+}
+.genre-section {
+    min-height: 500px;
+    border-top: 2px solid #ddd;
+}
+.genre-section p {
+    font-size: 18px;
+    margin: 10px;
+}
+.genre-artists{
+    padding: 15px;
+}
+.genre-artists span{
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 18px 10px;
+    margin: 20px;
+    vertical-align: top;
+    align-items: flex-start;
+    justify-content: space-around;
+    cursor: pointer;
+    box-shadow: rgba(5px, 5px, 5px, gray);
+}
+.genre-artists span:hover{
+    transform: translateY(-10px);
+}
+footer {
+    font-size: 18px;
+    text-align: center;
+    padding: 30px;
+    background-color: #111;
+    color: white;
+}
